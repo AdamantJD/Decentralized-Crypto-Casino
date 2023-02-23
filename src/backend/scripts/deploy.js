@@ -5,7 +5,7 @@ async function main() {
   console.log("Account balance:", (await deployer.getBalance()).toString());
   
   const CASINO = await ethers.getContractFactory("Casino");
-  const casino = await CASINO.deploy()
+  const casino = await CASINO.deploy("0xF978bAa68aEe5Cd5425187BcE97f75C2817E6892")
 
   // Save copies of each contracts abi and address to the frontend.
   saveFrontendFiles(casino, "Casino");
