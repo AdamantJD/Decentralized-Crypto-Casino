@@ -13,7 +13,7 @@ const Header = () =>{
                 display={"Buy"}
                 functionallity={() => navigate("buyTokens")}
                 size={'large'}
-                backGround={'#2f3d45'}
+                backGround={'#D59936'}
                 text={'#e0e5bc'}
               />
         </Grid>
@@ -24,7 +24,7 @@ const Header = () =>{
                 display={"Sell"}
                 functionallity={() => navigate("withdrawTokens")}
                 size={'large'}
-                backGround={'#2f3d45'}
+                backGround={'#D59936'}
                 text={'white'}
               />
         </Grid>

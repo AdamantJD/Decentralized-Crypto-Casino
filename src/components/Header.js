@@ -39,7 +39,7 @@ const useStyles = makeStyles()(() => ({
   logo: {
     fontFamily: "Work Sans, sans-serif",
     fontWeight: 600,
-    color: "#FFFEFE",
+    color: "#FFFFFF",
     textAlign: "left",
   },
   menuButton: {
@@ -51,7 +51,7 @@ const useStyles = makeStyles()(() => ({
   toolbar: {
     display: "flex",
     justifyContent: "space-between",
-    backgroundColor: "#222c31",
+    backgroundColor: "#FFFFFF",
   },
   drawerContainer: {
     padding: "20px 30px",
@@ -88,14 +88,14 @@ export default function Header({ login, account, balance }) {
   const LoginButton = () => {
     if (account === "") {
       return (
-        <Button variant="contained" color="error" onClick={login}>
-          Conect
+        <Button variant="contained" color="success" onClick={login}>
+          Connect
         </Button>
       );
     } else {
       return (
         <CustomButton
-          backGround={"#222c31"}
+          backGround={"#D59936"}
           text={"#fff"}
           display={`${account.slice(0, 5)}...`}
         />
@@ -132,7 +132,7 @@ export default function Header({ login, account, balance }) {
                 }}
                 PaperProps={{
                   sx: {
-                    backgroundColor: "#2f3d45",
+                    backgroundColor: "#181818",
                     color: "white",
                   },
                 }}
@@ -196,7 +196,7 @@ export default function Header({ login, account, balance }) {
                 }}
                 PaperProps={{
                   sx: {
-                    backgroundColor: "#2f3d45",
+                    backgroundColor: "#696969",
                     color: "white",
                   },
                 }}
@@ -252,9 +252,9 @@ export default function Header({ login, account, balance }) {
   const femmecubatorLogo = (width) => (
     <Box
       sx={{
-        backgroundColor: "#222c31",
+        backgroundColor: "#696969",
         border: 5,
-        borderColor: "#222c31",
+        borderColor: "#696969",
         borderRadius: "10px",
         width:{width},
       }}
@@ -268,7 +268,7 @@ export default function Header({ login, account, balance }) {
       >
         <Grid item xs={6}>
           <Box alignItems="start" justifyContent="left">
-            <Grid container columnSpacing={{ xs: 0.5, md: 1 }}>
+            <Grid container columnSpacing={{ xs: 1, md: 4 }}>
               <Grid item>
                 <Grid item xs={10} sm={6}>
                   <Grid container>{balance}</Grid>
@@ -297,7 +297,7 @@ export default function Header({ login, account, balance }) {
             <Button
               variant="contained"
               color="success"
-              startIcon={<WalletIcon sx={{ color: "#1f1f1f" }} />}
+              startIcon={<WalletIcon sx={{ color: "#D59936" }} />}
               onClick={() => navigate("/Wallet/buyTokens")}
             >
               <Typography display={{ xs: "none", md: "contents" }}>
@@ -330,7 +330,7 @@ export default function Header({ login, account, balance }) {
 
   return (
     <header>
-      <AppBar sx={{ bgcolor: "#2f3d45" }} className={header}>
+      <AppBar sx={{ bgcolor: "#181818" }} className={header}>
         {mobileView ? displayMobile() : displayDesktop()}
       </AppBar>
     </header>

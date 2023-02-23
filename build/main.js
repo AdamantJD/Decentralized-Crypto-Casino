@@ -18739,7 +18739,7 @@ function getDefaultWarning() {
   }
 
   return {
-    main: '#ed6c02',
+    main: '#D59936',
     // closest to orange[800] that pass 3:1.
     light: _colors_orange__WEBPACK_IMPORTED_MODULE_9__["default"][500],
     dark: _colors_orange__WEBPACK_IMPORTED_MODULE_9__["default"][900]

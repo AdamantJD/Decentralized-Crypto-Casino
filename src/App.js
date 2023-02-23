@@ -66,7 +66,7 @@ const App = () => {
 
 
   return (
-    <Grid container rowSpacing={{ xs: 8, sm: 9 }} sx={{ width: 1, backgroundColor: '#222c31'}}>
+    <Grid container rowSpacing={{ xs: 8, sm: 9 }} sx={{ width: 1, backgroundColor: '#11111'}}>
     <Grid item xs={12}>
       <Header login={web3Handler} balance={balance} account={account}/>
     </Grid>

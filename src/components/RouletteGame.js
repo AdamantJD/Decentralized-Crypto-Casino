@@ -116,7 +116,7 @@ const RouletteGame = ({balance, account}) => {
                   TextFielValue={betAmount.value}
                   changeValue={auxChange}
                   onChangeValue={betAmount.onChange}
-                  buttonColor={'#ed6c02'}
+                  buttonColor={'#D59936'}
                 />
               </Grid>
             </Grid>

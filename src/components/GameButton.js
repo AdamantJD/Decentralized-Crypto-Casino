@@ -8,7 +8,7 @@ const GameButton = ({games}) => {
   return (
 <Grid container alignItems="center" justifyContent="center">
   <Grid item display={{ xs: "none", sm: "contents" }}>
-  <CustomButton width={'20%'} backGround={'#222c31'}
+  <CustomButton width={'20%'} backGround={'#D59936'}
     functionallity={()=>navigate("Roulette")}
     text={'#e0e5bc'} display={
       <Grid container sx={{ width: "100%" }}>
@@ -47,7 +47,7 @@ const GameButton = ({games}) => {
    
   </Grid>
   <Grid item display={{ xs: "contents", sm: "none" }}>
-  <CustomButton width={'60%'} backGround={'#222c31'}
+  <CustomButton width={'60%'} backGround={'#D59936'}
     functionallity={()=>navigate("Roulette")}
     text={'#e0e5bc'} display={
       <Grid container sx={{ width: "100%" }}>
