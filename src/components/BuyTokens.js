@@ -60,7 +60,7 @@ const BuyTokens = ({account, price}) => {
     <Grid container rowSpacing={2}>
       <Grid item xs={12}>
       <Grid container alignItems="center" justifyContent="center">
-        <Typography variant="h3" sx={{color:'#FFFFFF', width:'90%'}} align='center'>Tokens Store</Typography>
+        <Typography variant="h3" sx={{color:'#FFFFFF', width:'90%'}} align='center'>Buy Chips</Typography>
         </Grid>
         </Grid>
         <Grid item xs={12}>
@@ -113,7 +113,7 @@ const BuyTokens = ({account, price}) => {
     key={"hola"}
     size="normal"
     id="outlined-number"
-    label="Amount of Tokens"
+    label="Amount of Chips"
     type="number"
     color="secondary"
     value={tokenAmount.value}

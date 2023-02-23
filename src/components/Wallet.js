@@ -10,7 +10,7 @@ const Header = () =>{
         <Grid item xs={6}>
         <Grid container alignItems="end" justifyContent="right">
         <CustomButton
-                display={"Deposit"}
+                display={"Buy"}
                 functionallity={() => navigate("buyTokens")}
                 size={'large'}
                 backGround={'#2f3d45'}
@@ -21,7 +21,7 @@ const Header = () =>{
         <Grid item xs={6}>
         <Grid container alignItems="start" justifyContent="left">
         <CustomButton
-                display={"Withdraw"}
+                display={"Sell"}
                 functionallity={() => navigate("withdrawTokens")}
                 size={'large'}
                 backGround={'#2f3d45'}

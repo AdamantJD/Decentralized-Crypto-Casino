@@ -12,7 +12,7 @@ import SelectAmount from "./SelectAmount";
   const Withdraw = async(event, tokenAmount, change, price, account, dispatch) => {
     event.preventDefault();
     if (tokenAmount === ""){
-      toast.error(`Please select an amount of tokens to withdraw`, {
+      toast.error(`Please select an amount of Chips to withdraw`, {
         position: "top-right",
         autoClose: 3000,
         hideProgressBar: false,
@@ -27,7 +27,7 @@ import SelectAmount from "./SelectAmount";
       await contractsService.withdrawTokens(tokenAmount)
       await dispatch(loadBalance(account));
   
-      toast.success(`You have withdrawn ${tokenAmount} tokens`, {
+      toast.success(`You have withdrawn ${tokenAmount} chips`, {
           position: "top-right",
           autoClose: 3000,
           hideProgressBar: false,
@@ -80,7 +80,7 @@ import SelectAmount from "./SelectAmount";
       <Grid container rowSpacing={2}>
       <Grid item xs={12}>
       <Grid container alignItems="center" justifyContent="center">
-        <Typography variant="h3" sx={{color:'#FFFFFF', width:'90%'}} align='center'>Withdraw Tokens</Typography>
+        <Typography variant="h3" sx={{color:'#FFFFFF', width:'90%'}} align='center'>Sell Chips</Typography>
         </Grid>
         </Grid>
     <Grid item xs={12}>
@@ -99,7 +99,7 @@ import SelectAmount from "./SelectAmount";
           <Grid item xs={12} sx={{ m: 0.25 }}>
           <Grid container alignItems="center" justifyContent="center" spacing={2}>
             <Button type="submit" size="large" variant="contained" color="warning">
-              Withdraw
+              Convert
             </Button>
           </Grid>
           </Grid>

@@ -1,9 +1,9 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "C:\\Users\\brais\\OneDrive\\Escritorio\\CriptoCasino\\src\\backend\\contracts\\Casino.sol": {
-      "lastModificationDate": 1674467648214,
-      "contentHash": "72bbaaddc74ed2f84b38f47190e214ef",
+    "/Users/dom/Documents/CriptoCasino/src/backend/contracts/Casino.sol": {
+      "lastModificationDate": 1677106619776,
+      "contentHash": "32c99529590aab842bc7d573f95bb272",
       "sourceName": "src/backend/contracts/Casino.sol",
       "solcConfig": {
         "version": "0.8.4",
@@ -39,8 +39,8 @@
         "Casino"
       ]
     },
-    "C:\\Users\\brais\\OneDrive\\Escritorio\\CriptoCasino\\node_modules\\@openzeppelin\\contracts\\access\\Ownable.sol": {
-      "lastModificationDate": 1674466755118,
+    "/Users/dom/Documents/CriptoCasino/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
+      "lastModificationDate": 1677100129010,
       "contentHash": "e436cea06129be2c73cda4b1acc848b5",
       "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
       "solcConfig": {
@@ -76,9 +76,9 @@
         "Ownable"
       ]
     },
-    "C:\\Users\\brais\\OneDrive\\Escritorio\\CriptoCasino\\src\\backend\\contracts\\Token.sol": {
-      "lastModificationDate": 1674468561867,
-      "contentHash": "331f8ff8995e2641854d341dbe17ff53",
+    "/Users/dom/Documents/CriptoCasino/src/backend/contracts/Token.sol": {
+      "lastModificationDate": 1677099731714,
+      "contentHash": "b64aa58197d801d72af7133b3b75de85",
       "sourceName": "src/backend/contracts/Token.sol",
       "solcConfig": {
         "version": "0.8.4",
@@ -112,8 +112,8 @@
         "IERC20"
       ]
     },
-    "C:\\Users\\brais\\OneDrive\\Escritorio\\CriptoCasino\\node_modules\\@openzeppelin\\contracts\\utils\\Context.sol": {
-      "lastModificationDate": 1674341339710,
+    "/Users/dom/Documents/CriptoCasino/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1677100128971,
       "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
       "sourceName": "@openzeppelin/contracts/utils/Context.sol",
       "solcConfig": {

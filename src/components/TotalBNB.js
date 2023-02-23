@@ -5,7 +5,7 @@ const TotalBNB = ({tokenAmount, price, msg}) =>{
     if (tokenAmount > 0 && tokenAmount!==""){
         return (
           <Grid container justifyContent="center" alignItems="center">
-            <Typography sx={{color:'#FFFFFF'}}>{msg} {tokenAmount*price} BNB</Typography>
+            <Typography sx={{color:'#FFFFFF'}}>{msg} {tokenAmount*price} ADMC</Typography>
             <Avatar
         alt=""
         src={bnb}
