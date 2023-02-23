@@ -25,7 +25,9 @@ const headersData = [
   {
     label: "Games",
     href: "/games",
-  }
+  },
+  {  label: "Buy Chips",
+  href: "/Wallet",}
 ];
 
 const useStyles = makeStyles()(() => ({
@@ -275,7 +277,7 @@ export default function Header({ login, account, balance }) {
                 </Grid>
               </Grid>
               <Grid item xs={2} sm={6}>
-                <Grid container alignItems="end" justifyContent="left">
+                <Grid container alignItems="end" justifyContent="right">
                   <Avatar
                     alt=""
                     src={casinoToken}

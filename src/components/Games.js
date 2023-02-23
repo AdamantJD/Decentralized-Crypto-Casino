@@ -26,17 +26,17 @@ const Roulette = () =>{
     return(
         <Grid item>
         <Grid container alignItems="center" justifyContent="center" spacing={1}>
-        <Grid item xs = {12}>
+        <Grid item xs = {1}>
             <Grid container alignItems="center" justifyContent="center">
             <Grid item>
-            <Avatar
+            <img
         alt=""
         src={starImage}
-        sx={{ width: 50, height: 50 }}
+        style={{ width: 100, height: 110, borderRadius: 0 }}
       />
             </Grid>
             <Grid item>
-      <Typography variant='h3' sx={{color:'#FFFFFF', fontSize:'1'}}>Games</Typography>
+      <Typography variant='h3' sx={{color:'#FFFFFF', fontSize:'1'}}></Typography>
             </Grid>
             </Grid>
             </Grid>
