@@ -26,7 +26,7 @@ const headersData = [
     label: "Games",
     href: "/games",
   },
-  {  label: "Buy Chips",
+  {  label: "Pepperoni",
   href: "/Wallet",}
 ];
 

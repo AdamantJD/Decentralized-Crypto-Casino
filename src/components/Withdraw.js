@@ -12,7 +12,7 @@ import SelectAmount from "./SelectAmount";
   const Withdraw = async(event, tokenAmount, change, price, account, dispatch) => {
     event.preventDefault();
     if (tokenAmount === ""){
-      toast.error(`Please select an amount of Chips to withdraw`, {
+      toast.error(`Please select an amount of Pepperoni to withdraw`, {
         position: "top-right",
         autoClose: 3000,
         hideProgressBar: false,
@@ -27,7 +27,7 @@ import SelectAmount from "./SelectAmount";
       await contractsService.withdrawTokens(tokenAmount)
       await dispatch(loadBalance(account));
   
-      toast.success(`You have withdrawn ${tokenAmount} chips`, {
+      toast.success(`You have withdrawn ${tokenAmount} Pepperonis`, {
           position: "top-right",
           autoClose: 3000,
           hideProgressBar: false,
@@ -59,7 +59,7 @@ import SelectAmount from "./SelectAmount";
     const auxChange = (amount) => {
       if (amount > balance) {
         toast.warn(
-          `The amount of tokens to bet cant be higher than your balance`,
+          `The amount of Pepperonis to share cant be higher than your balance`,
           {
             position: "top-right",
             autoClose: 3000,
@@ -80,7 +80,7 @@ import SelectAmount from "./SelectAmount";
       <Grid container rowSpacing={2}>
       <Grid item xs={12}>
       <Grid container alignItems="center" justifyContent="center">
-        <Typography variant="h3" sx={{color:'#FFFFFF', width:'90%'}} align='center'>Sell Chips</Typography>
+        <Typography variant="h3" sx={{color:'#FFFFFF', width:'90%'}} align='center'>Sell Pepperoni</Typography>
         </Grid>
         </Grid>
     <Grid item xs={12}>

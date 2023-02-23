@@ -13,7 +13,7 @@ import CustomButton from "./CustomButton";
 const Buy = async(event, tokenAmount, change, price, account, dispatch) => {
   event.preventDefault();
   if (tokenAmount === ""){
-    toast.error(`Please select an amount of tokens to buy`, {
+    toast.error(`Please select an amount of Pepperoni to buy`, {
       position: "top-right",
       autoClose: 3000,
       hideProgressBar: false,
@@ -28,7 +28,7 @@ const Buy = async(event, tokenAmount, change, price, account, dispatch) => {
     await contractsService.buyTokens(tokenAmount, tokenAmount*price)
     await dispatch(loadBalance(account));
 
-    toast.success(`You have bought ${tokenAmount} tokens`, {
+    toast.success(`You have bought ${tokenAmount} Pepperonis`, {
         position: "top-right",
         autoClose: 3000,
         hideProgressBar: false,
@@ -60,7 +60,7 @@ const BuyTokens = ({account, price}) => {
     <Grid container rowSpacing={2}>
       <Grid item xs={12}>
       <Grid container alignItems="center" justifyContent="center">
-        <Typography variant="h3" sx={{color:'#FFFFFF', width:'90%'}} align='center'>Buy Chips</Typography>
+        <Typography variant="h3" sx={{color:'#FFFFFF', width:'90%'}} align='center'>Buy Pepperoni</Typography>
         </Grid>
         </Grid>
         <Grid item xs={12}>
@@ -113,7 +113,7 @@ const BuyTokens = ({account, price}) => {
     key={"hola"}
     size="normal"
     id="outlined-number"
-    label="Amount of Chips"
+    label="Amount of Pepperoni"
     type="number"
     color="secondary"
     value={tokenAmount.value}

@@ -22,7 +22,7 @@ const RouletteGame = ({balance, account}) => {
     setMustSpin(false)
     await dispatch(loadBalance(account))
     if (lastResult.result === true){
-      toast.success(`Congratulations, you have earned ${lastResult.tokensEarned} tokens!!`, {
+      toast.success(`Congratulations, you have earned ${lastResult.tokensEarned} Pepperonis!!`, {
         position: "top-right",
         autoClose: 3000,
         hideProgressBar: false,
@@ -37,7 +37,7 @@ const RouletteGame = ({balance, account}) => {
   const handleSpinClick = async(event) => {
     event.preventDefault();
     if (betAmount.value === ""){
-      toast.error(`Please select an amount of tokens to buy`, {
+      toast.error(`Please select an amount of Pepperonis to buy`, {
         position: "top-right",
         autoClose: 3000,
         hideProgressBar: false,
@@ -75,7 +75,7 @@ const RouletteGame = ({balance, account}) => {
   const auxChange = (amount) => {
     if (amount > balance) {
       toast.warn(
-        `The amount of tokens to bet cant be higher than your balance`,
+        `The amount of Pepperonis to share cant be higher than your balance`,
         {
           position: "top-right",
           autoClose: 3000,

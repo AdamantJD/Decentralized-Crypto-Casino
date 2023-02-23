@@ -9,15 +9,10 @@ const image = {
     url: rouletteImage,
     title: <Grid container alignItems="center" justifyContent="center" columnSpacing={1} sx={{width:'100%'}}>
     <Grid item display={{ xs: "none", md: "contents" }}>
-    <Avatar
-alt=""
-src={rouleteIcon}
-sx={{ width: 40, height: 40 }}
-display={{ xs: "none", md: "contents" }}
-/>
+
     </Grid>
     <Grid item>
-    <Typography variant='h5' sx={{color:'#FFFFFF'}}>Roulette</Typography>
+    <Typography variant='h5' sx={{color:'#FFFFFF'}}>Pizza Slices</Typography>
     </Grid>
     </Grid>,
   };
