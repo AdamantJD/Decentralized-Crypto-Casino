@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Ruleta from "./Roulette";
+import Ruleta from "./PizzaGame";
 import {  Grid, Button } from "@mui/material";
 import { useField } from "../hooks/useField";
 import { useDispatch } from "react-redux";
@@ -124,17 +124,15 @@ const RouletteGame = ({balance, account}) => {
               <Grid container alignItems="center" justifyContent="center">
                 <Grid item xs={4}>
                   <Grid container alignItems="center" justifyContent="center">
-                    <Button
-                      style={{
-                        width: "80%",
-                      }}
-                      variant="contained"
-                      color="error"
-                      type="submit"
-                      onClick={()=>changeNumberBet(1,7)}
-                    >
-                      1-7
-                    </Button>
+                  <CustomButton
+                      backGround={"red"}
+                      text={"white"}
+                      display={"Slices 1-7"}
+                      size={"large"}
+                      type={"submit"}
+                      width={"80%"}
+                      functionallity={()=>changeNumberBet(1,7)}
+                    />
                   </Grid>
                 </Grid>
                 <Grid item xs={4}>
@@ -155,9 +153,9 @@ const RouletteGame = ({balance, account}) => {
                 <Grid item xs={4}>
                   <Grid container alignItems="center" justifyContent="center">
                     <CustomButton
-                      backGround={"#111111"}
+                      backGround={"gold"}
                       text={"white"}
-                      display={"8-14"}
+                      display={"Slices 8-14"}
                       size={"large"}
                       type={"submit"}
                       width={"80%"}

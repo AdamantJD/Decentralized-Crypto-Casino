@@ -77,7 +77,7 @@ const App = () => {
           <Route path="withdrawTokens" element={<WithdrawTokens balance={balance} account={account} price={price}/>} />
         </Route>
         <Route path="/games" element={<Games/>}/>
-        <Route path="/games/Roulette" element={<RouletteGame balance={balance} account={account} />} />
+        <Route path="/games/PizzaGame" element={<RouletteGame balance={balance} account={account} />} />
       </Routes>
       </Grid>
       </Grid>
